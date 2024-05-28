@@ -1,4 +1,17 @@
-import taskBlock from './1-block-scoped.js';
+import createIteratorObject from "./100-createIteratorObject.js";
 
-console.log(taskBlock(true));
-console.log(taskBlock(false));
+import createEmployeesObject from './11-createEmployeesObject.js';
+import createReportObject from './12-createReportObject.js';
+
+const employees = {
+    ...createEmployeesObject('engineering', ['Bob', 'Jane']),
+    ...createEmployeesObject('marketing', ['Sylvie'])
+};
+
+const report = createReportObject(employees);
+console.log(report)
+const reportWithIterator = createIteratorObject(report);
+
+for (const item of reportWithIterator) {
+    console.log(item);
+}
