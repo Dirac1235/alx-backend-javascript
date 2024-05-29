@@ -8,7 +8,7 @@ const employees = {
     ...createEmployeesObject('engineering', ['Bob', 'Jane']),
     ...createEmployeesObject('marketing', ['Sylvie'])
 };
-
+fadfadf
 const report = createReportObject(employees);
 const reportWithIterator = createIteratorObject(report);
 
