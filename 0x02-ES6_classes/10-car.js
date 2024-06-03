@@ -1,0 +1,6 @@
+const sym = Symbol('foo')
+const sym2 = Symbol('foo')
+console.log(sym === sym2)
+console.log(sym)
+const val = Symbol.for('foo')
+console.log(val)
